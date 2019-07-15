@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            width: 300px;
+            margin: 100px auto;
+            background-color: #ebebeb;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        
+        div>* {
+            display: block;
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<!-- <script>
+    const getSize = height => {
+
+        if (height <= 1650) {
+            return "S";
+        } else if (height > 1650 && height <= 1700) {
+            return "M";
+        } else if (height > 1700 && height <= 1800) {
+            return "L";
+        } else if (height > 1800 && height <= 1900) {
+            return "XL";
+        } else if (height > 1900) {
+            return "XXL";
+        }
+    }
+    results = [];
+    for (let index = 0; index < 1000; index++) {
+        let a = Math.floor(Math.random() * (2000 - 1400)) + 1400;
+        results.push({
+            "height": a,
+            "size": getSize(a)
+        })
+    }
+    document.write(JSON.stringify(results))
+</script> -->
+
+<body>
+    <div>
+        <input type="text" id="height" name="">
+        <button id="getResult">OK</button>
+        <p id="resultText"></p>
+    </div>
+</body>
+
+</html>
